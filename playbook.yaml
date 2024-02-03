@@ -6,4 +6,5 @@
       ansible.builtin.ping:
 
     - name: Rebooing all machines
-      ansible.builtin.reboot:
+      ansible.builtin.debug:
+        var: ansible_facts['nodename']
