@@ -1,0 +1,9 @@
+---
+- name: Demonstrating ansible modules
+  hosts: centos
+  tasks:
+    - name: Checking connectivity to managed node
+      ansible.builtin.ping:
+
+    - name: Rebooing all machines
+      ansible.builtin.reboot:
