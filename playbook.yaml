@@ -5,6 +5,6 @@
     - name: Checking connectivity to managed node
       ansible.builtin.ping:
 
-    - name: Rebooing all machines
+    - name: Rdisplay facts
       ansible.builtin.debug:
         var: ansible_facts['nodename']
